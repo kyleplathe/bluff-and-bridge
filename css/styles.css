@@ -375,6 +375,10 @@ p {
   margin-top: 0.75rem;
 }
 
+.section-head .hero-actions {
+  margin-top: 1.25rem;
+}
+
 .register {
   list-style: none;
   margin: 0;

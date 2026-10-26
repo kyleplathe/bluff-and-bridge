@@ -13,6 +13,16 @@ if (yearEl) {
   yearEl.textContent = String(new Date().getFullYear());
 }
 
+document.querySelectorAll('a[href="#book"]').forEach((link) => {
+  link.addEventListener("click", (event) => {
+    const book = document.querySelector("#book");
+    if (!book) return;
+    event.preventDefault();
+    book.scrollIntoView({ behavior: "smooth", block: "start" });
+    history.pushState(null, "", "#book");
+  });
+});
+
 const form = document.querySelector("#book-form");
 const status = document.querySelector("#book-status");
 

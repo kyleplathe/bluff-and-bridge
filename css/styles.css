@@ -237,6 +237,7 @@ p {
 
 .band {
   padding: 3.5rem 0;
+  scroll-margin-top: calc(var(--header) + 0.5rem);
 }
 
 .band-sand {
@@ -260,7 +261,8 @@ p {
 }
 
 .walk-card {
-  background: var(--sand);
+  background: color-mix(in srgb, var(--sand) 55%, var(--paper));
+  border: 1px solid color-mix(in srgb, var(--tide) 14%, transparent);
   padding: 1.35rem 1.25rem 1.5rem;
 }
 
@@ -280,7 +282,7 @@ p {
 }
 
 .price {
-  color: var(--clay);
+  color: var(--pine);
   font-weight: 600;
   font-size: 1.2rem;
 }
